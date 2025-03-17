@@ -78,12 +78,18 @@ strong {
   align-items: center;
   height: 100vh;
 }
+.with-margin {
+  margin-top: 100px; /* Adjust this value as needed */
+}
+
+
 
 /* Main Container */
 .container {
-  width: 100%;
-  max-width: 850px;
+  /* width: 100%;
+  max-width: 850px; */
   padding: 20px;
+  /* margin-top: 20px; */
 }
 
 /* Search Card */
@@ -99,7 +105,7 @@ strong {
 h1 {
   font-size: 26px;
   color: #333;
-  margin-bottom: 20px;
+ 
 }
 
 /* Search Box */
@@ -107,7 +113,8 @@ h1 {
   display: flex;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
+  
 }
 
 input {
@@ -158,7 +165,6 @@ button:hover {
 
 /* Student Details */
 .student-details {
-  margin-top: 20px;
   text-align: left;
   max-height: 500px;
   overflow-y: auto;
@@ -166,6 +172,7 @@ button:hover {
   border: 2px solid #ddd;
   border-radius: 12px;
   background: #fff;
+  
 }
 
 /* Table Styling */
@@ -213,9 +220,10 @@ td:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
   flex-direction: column;
   position: relative;
+  min-height: 100vh;
+  padding: 50px 0;
 }
 
 /* Photo Container (Initially Hidden) */
@@ -299,4 +307,43 @@ td:first-child {
     margin-top: 20px;
     transform: none;
   }
+}
+.score-container {
+  margin: 40px 0;
+  padding: 20px;
+  background: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #1a202c;
+  text-align: center;
+}
+
+.section-subtitle {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 20px 0 10px;
+  color: #4a5568;
+}
+
+.chart-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.chart-wrapper.small {
+  max-width: 400px;
+  margin: 0 auto 30px;
+}
+
+/* Optional: Add animation */
+.chart-wrapper:hover {
+  transform: scale(1.02);
+  transition: all 0.3s ease;
 }
